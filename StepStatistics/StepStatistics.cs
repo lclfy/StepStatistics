@@ -212,21 +212,33 @@ namespace StepStatistics
         private void removeUnuseableWords()
         {
             TextData = TextData.Replace("郑容段列车长", "");
-            TextData = TextData.Replace("郑客段列车长王凯", "王凯男");
+            TextData = TextData.Replace("郑客段列车长王凯：1", "王凯男");
+            TextData = TextData.Replace("王蕊（京焦一）", "王蕊京焦");
             TextData = TextData.Replace("郑客段列车长", "");
             TextData = TextData.Replace("郑客", "");
             TextData = TextData.Replace(".", "");
-            TextData = TextData.Replace("A平安银行党志诚", "党志诚");
+            TextData = TextData.Replace("A平安银行党志诚17", "党志诚");
+            TextData = TextData.Replace("134628", "");
+            TextData = TextData.Replace("张大鹏1063", "张大鹏");
+            TextData = TextData.Replace("进步神速", "");
+            TextData = TextData.Replace("迸步神速", "");
+            TextData = TextData.Replace("今日冠军", "");
             TextData = TextData.Replace("棼", "梦");
-            TextData = TextData.Replace("鵾", "鹍");
+            TextData = TextData.Replace("鵾", "鹍").Replace("鹖", "鹍");
+            TextData = TextData.Replace("兩", "雨");
+           TextData = TextData.Replace("𡥄", "孟");
             TextData = TextData.Replace("𡝭", "娟");
+            TextData = TextData.Replace("•", "");
+             TextData = TextData.Replace("𣇈", "晓");
             TextData = TextData.Replace("𡈼", "王");
+            TextData = TextData.Replace("𦍋", "毕");
             TextData = TextData.Replace("高铁", "");
             TextData = TextData.Replace("一队", "");
             TextData = TextData.Replace("京武", "");
             TextData = TextData.Replace("京郑", "");
             TextData = TextData.Replace("呼和", "");
             TextData = TextData.Replace("京商", "");
+            TextData = TextData.Replace("京银", "");
             TextData = TextData.Replace("京南", "");
             TextData = TextData.Replace("京西", "");
             TextData = TextData.Replace("一组", "");

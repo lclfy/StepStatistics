@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StepStatistics", "StepStatistics\StepStatistics.csproj", "{1BFF2669-0EF6-4245-8074-24A8AA8E90EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BFF2669-0EF6-4245-8074-24A8AA8E90EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BFF2669-0EF6-4245-8074-24A8AA8E90EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BFF2669-0EF6-4245-8074-24A8AA8E90EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BFF2669-0EF6-4245-8074-24A8AA8E90EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C8E8AEB0-56D0-454B-B01F-A498F60DC010}
+	EndGlobalSection
+EndGlobal

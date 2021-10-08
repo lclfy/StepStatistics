@@ -217,14 +217,14 @@ namespace StepStatistics
             TextData = TextData.Replace("郑客段列车长", "");
             TextData = TextData.Replace("郑客", "");
             TextData = TextData.Replace(".", "");
-            TextData = TextData.Replace("A平安银行党志诚17", "党志诚");
+            TextData = TextData.Replace("A平安银行党志诚17", "党志诚").Replace("A平安银行党志诚", "党志诚");
             TextData = TextData.Replace("134628", "");
             TextData = TextData.Replace("张大鹏1063", "张大鹏");
             TextData = TextData.Replace("进步神速", "");
             TextData = TextData.Replace("迸步神速", "");
             TextData = TextData.Replace("今日冠军", "");
             TextData = TextData.Replace("棼", "梦");
-            TextData = TextData.Replace("鵾", "鹍").Replace("鹖", "鹍");
+            TextData = TextData.Replace("鵾", "鹍").Replace("鹖", "鹍").Replace("陶鹃","陶鹍");
             TextData = TextData.Replace("兩", "雨");
            TextData = TextData.Replace("𡥄", "孟");
             TextData = TextData.Replace("𡝭", "娟");
@@ -367,7 +367,7 @@ namespace StepStatistics
             }
             if(lastRow == -1)
             {
-                lastRow = sheet.LastRowNum;
+                lastRow = sheet.LastRowNum+1;
             }
             for (int counter = 0; counter < _hasNotFoundedDU.Count; counter++)
             {

@@ -215,23 +215,38 @@ namespace StepStatistics
             TextData = TextData.Replace("郑客段列车长王凯：1", "王凯男");
             TextData = TextData.Replace("王蕊（京焦一）", "王蕊京焦");
             TextData = TextData.Replace("郑客段列车长", "");
+            TextData = TextData.Replace("郑客段列车长士解元", "王静亮");
             TextData = TextData.Replace("郑客", "");
             TextData = TextData.Replace(".", "");
-            TextData = TextData.Replace("A平安银行党志诚17", "党志诚");
+            TextData = TextData.Replace("-", "");
+            TextData = TextData.Replace("…", "");
+            TextData = TextData.Replace("A平安银行党志诚17", "党志诚").Replace("A平安银行党志诚", "党志诚");
+            TextData = TextData.Replace("千家惠", "于家惠");
             TextData = TextData.Replace("134628", "");
+            TextData = TextData.Replace("彭彭晓梦", "彭晓梦");
             TextData = TextData.Replace("张大鹏1063", "张大鹏");
             TextData = TextData.Replace("进步神速", "");
             TextData = TextData.Replace("迸步神速", "");
             TextData = TextData.Replace("今日冠军", "");
-            TextData = TextData.Replace("棼", "梦");
-            TextData = TextData.Replace("鵾", "鹍").Replace("鹖", "鹍");
+            TextData = TextData.Replace("棼", "梦").Replace("婪","梦");
+            TextData = TextData.Replace("鵾", "鹍").Replace("鹖", "鹍").Replace("陶鹃", "陶鹍");
+            TextData = TextData.Replace("吳", "吴");
+            TextData = TextData.Replace("雃", "雅");
+            TextData = TextData.Replace("崔崔婕", "崔婕");
+            TextData = TextData.Replace("张张雪姣", "张雪姣");
+            TextData = TextData.Replace("韩希頁", "韩希真");
+            TextData = TextData.Replace("乇", "毛");
+            TextData = TextData.Replace("王漬君", "王清君");
+            TextData = TextData.Replace("千慧杰", "王慧杰");
+            
+            TextData = TextData.Replace("盂鑫", "孟鑫");
             TextData = TextData.Replace("兩", "雨");
            TextData = TextData.Replace("𡥄", "孟");
             TextData = TextData.Replace("𡝭", "娟");
             TextData = TextData.Replace("•", "");
              TextData = TextData.Replace("𣇈", "晓");
-            TextData = TextData.Replace("𡈼", "王");
-            TextData = TextData.Replace("𦍋", "毕");
+            TextData = TextData.Replace("𡈼", "王").Replace("壬","王"); 
+             TextData = TextData.Replace("𦍋", "毕");
             TextData = TextData.Replace("高铁", "");
             TextData = TextData.Replace("一队", "");
             TextData = TextData.Replace("京武", "");
@@ -367,7 +382,7 @@ namespace StepStatistics
             }
             if(lastRow == -1)
             {
-                lastRow = sheet.LastRowNum;
+                lastRow = sheet.LastRowNum+1;
             }
             for (int counter = 0; counter < _hasNotFoundedDU.Count; counter++)
             {
@@ -415,6 +430,7 @@ namespace StepStatistics
         private void button2_Click(object sender, EventArgs e)
         {
             writeData();
+            textBox1.Text = "X.X";
         }
 
         //选择图片
